@@ -144,6 +144,7 @@ body{
 /* for large screens */
 @media(min-width:1441px) {
     .grid-container{
+        justify-content: center;
         display:grid;
         grid-template-columns: 20% 1440px;
         grid-gap:10px;

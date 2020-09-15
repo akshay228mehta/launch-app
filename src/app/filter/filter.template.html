@@ -1,7 +1,7 @@
 <div class="filter">
-    <div class="sub-header">Filters</div>
+    <div class="sub-header" role="heading">Filters</div>
     <div>
-        <div class="filter-header">Launch Year</div>
+        <div class="filter-header" role="heading">Launch Year</div>
         <div>
             <span *ngFor="let year of years; let i = index;">
                 <button class="custom-button" [ngClass]="{'active': queryParams.launchYear == year}" (click)="yearSelected(year)">{{year}}</button>
@@ -15,7 +15,7 @@
     </div>
 
     <div>
-        <div class="filter-header">Successful Launch</div>
+        <div class="filter-header" role="heading">Successful Launch</div>
         <div>
             <button class="custom-button" [ngClass]="{'active': queryParams.launchSuccess == true}" (click)="successfulLaunchSelected(true)">True</button>
             <button class="custom-button" [ngClass]="{'active': queryParams.launchSuccess == false}" (click)="successfulLaunchSelected(false)">False</button>
@@ -23,7 +23,7 @@
     </div>
 
     <div>
-        <div class="filter-header">Successful Landing</div>
+        <div class="filter-header" role="heading">Successful Landing</div>
         <div>
             <button class="custom-button" [ngClass]="{'active': queryParams.landSuccess == true}" (click)="successfulLandSelected(true)">True</button>
             <button class="custom-button" [ngClass]="{'active': queryParams.landSuccess == false}" (click)="successfulLandSelected(false)">False</button>
