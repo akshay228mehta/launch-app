@@ -15,6 +15,10 @@
     "postinstall": "npm run build:client-and-server-bundles && npm run compile:server",
     "heroku-postbuild": "npm run build:client-and-server-bundles && npm run compile:server"
   },
+  "engines": {
+    "node": "10.15.1",
+    "npm": "6.4.1"
+  },
   "private": true,
   "dependencies": {
     "@angular/cli": "~8.3.9",
