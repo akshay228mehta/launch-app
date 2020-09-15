@@ -1,0 +1,25 @@
+<div class="landing-grid-container">
+    <div *ngFor="let data of launchData">
+        <div class="img-container">
+            <img src="{{data.links.mission_patch_small}}">
+        </div>
+        <div class="mission-name">{{data.mission_name}}</div>
+        <div class="custom-values"><label>Mission Ids:</label>
+            <ul *ngFor="let id of data.mission_id">
+                <li>{{id}}</li>
+            </ul></div>
+        <div class="custom-values">
+            <label>Launch Year:</label>
+            <span>{{data.launch_year}}</span>
+        </div>
+        <div class="custom-values">
+            <label>Successful Launch:</label>
+            <span>{{data.launch_success}}</span>
+        </div>
+        <div class="custom-values">
+            <label>Successful Landing:</label>
+            <span>{{data.launch_landing}}</span>
+        </div>
+    </div>
+
+</div>

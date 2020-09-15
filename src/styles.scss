@@ -1,1 +1,157 @@
-/* You can add global styles to this file, and also import other style files */
+// /* You can add global styles to this file, and also import other style files */
+
+body{
+    background-color: #f8f8f8;
+    font-family: sans-serif;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.img-container{
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+
+    img{
+        height: 190px;
+    }
+}
+
+.landing-grid-container > div {
+    border-radius: 5px;
+    padding:5%;
+    font-size: 30px;
+    background-color: white;
+}
+
+.sub-header{
+    font-size:20px;
+    font-weight: 700;
+}
+
+.filter-header{
+    font-size: 15px;
+    text-align: center;
+    border-bottom: 1px solid #a59898;
+    margin: 5% 15% 5% 15%;
+}
+
+.filter{
+    padding: 10px 10px 40px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.mission-name{
+    font-size: 17px;
+    font-weight: 700;
+    color: navy;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.custom-values{
+    label{
+        font-size: 17px;
+        font-weight: 700;
+        color: black;
+    }
+
+    span{
+        font-size: 17px;
+        color:navy;
+    }
+
+    ul{
+        margin: 5px;
+    }
+
+    ul li{
+        font-size: 17px;
+        color:navy;
+    }
+    
+}
+
+.custom-button{
+    margin:2% 10% 2% 10%;
+    background-color: #ccffb2;
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+    width: 30%;
+
+    &:active{
+        border:none;
+        background-color: #3a970c;
+    }
+
+    &.active{
+        background-color: #3a970c;
+    }
+}
+
+/* for mobiles */
+@media(min-width:0px) and (max-width:700px){
+    .grid-container{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-gap:10px;
+    }
+
+    .landing-grid-container{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-gap:10px;
+    }
+
+}
+
+/* for tablets */
+@media(min-width:701px) and (max-width:1024px){
+    .grid-container{
+        display:grid;
+        grid-template-columns: 20% 80%;
+        grid-gap:10px;
+    }
+
+    .landing-grid-container{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-gap:10px;
+    }
+    
+}
+
+/* for desktop */
+@media(min-width:1025px) and (max-width:1440px){
+    
+    .grid-container{
+        display:grid;
+        grid-template-columns: 19% 79%;
+        grid-gap:10px;
+    }
+
+    .landing-grid-container{
+        display: grid;
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-gap:10px;
+    }
+}
+
+/* for large screens */
+@media(min-width:1441px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: 20% 1440px;
+        grid-gap:10px;
+    }
+
+    .landing-grid-container{
+        display: grid;
+        grid-template-columns: 360px 360px 360px 360px;
+        grid-gap:10px;
+    }
+}
