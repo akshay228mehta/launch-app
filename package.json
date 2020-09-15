@@ -1,4 +1,4 @@
- {
+{
   "name": "space-app",
   "version": "0.0.0",
   "scripts": {
@@ -12,17 +12,11 @@
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "build:client-and-server-bundles": "ng build --prod && ng run space-app:server:production --bundleDependencies all",
-    "postinstall": "npm run build:client-and-server-bundles && npm run compile:server",
-    "heroku-postbuild": "npm run build:client-and-server-bundles && npm run compile:server"
-  },
-  "engines": {
-    "node": "10.15.1",
-    "npm": "6.4.1"
+    "start:heroku": "node dist/server",
+    "postinstall": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
-    "@angular/cli": "~8.3.9",
-    "@angular/compiler-cli": "~8.2.9",
     "@angular/animations": "~8.2.9",
     "@angular/common": "~8.2.9",
     "@angular/compiler": "~8.2.9",
